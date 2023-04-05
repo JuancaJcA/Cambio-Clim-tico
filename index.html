@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cambio Climático</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Lato", sans-serif;
+        }
+
+        body,
+        html {
+            height: 100%;
+            color: #777;
+            line-height: 1.8;
+        }
+
+        /* Create a Parallax Effect */
+        .bgimg-1,
+        .bgimg-2,
+        .bgimg-3 {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* First image (Logo. Full height) */
+        .bgimg-1 {
+            background-image: url('https://images.pexels.com/photos/2990612/pexels-photo-2990612.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+            min-height: 100%;
+        }
+
+        /* Second image (Portfolio) */
+        .bgimg-2 {
+            background-image: url("https://images.pexels.com/photos/1268068/pexels-photo-1268068.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+            min-height: 400px;
+        }
+
+        /* Third image (Contact) */
+        .bgimg-3 {
+            background-image: url("/w3images/parallax3.jpg");
+            min-height: 400px;
+        }
+
+        .w3-wide {
+            letter-spacing: 10px;
+        }
+
+        .w3-hover-opacity {
+            cursor: pointer;
+        }
+
+        /* Turn off parallax scrolling for tablets and phones */
+        @media only screen and (max-device-width: 1600px) {
+
+            .bgimg-1,
+            .bgimg-2,
+            .bgimg-3 {
+                background-attachment: scroll;
+                min-height: 400px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar" id="myNavbar">
+            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
+                href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="#inicio" class="w3-bar-item w3-button">INICIO</a>
+            <a href="#info" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> INFORMACIÓN</a>
+            <a href="#consecuencias" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i>
+                CONSECUENCIAS</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+                <i class="fa fa-search"></i>
+            </a>
+        </div>
+
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+            <a href="#info" class="w3-bar-item w3-button" onclick="toggleFunction()">INFORMACIÓN</a>
+            <a href="#consecuencias" class="w3-bar-item w3-button" onclick="toggleFunction()">CONSECUENCIAS</a>
+            <a href="#" class="w3-bar-item w3-button">BUSCAR</a>
+        </div>
+    </div>
+
+    <!-- Clima -->
+    <div class="bgimg-1 w3-display-container w3-opacity-min" id="inicio">
+        <div class="w3-display-middle" style="white-space:nowrap;">
+            <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">CAMBIO <span
+                    class="w3-hide-small">CLIMÁTICO</span>
+        </div>
+    </div>
+
+    <!-- Información -->
+    <div class="w3-content w3-container w3-padding-64" id="info">
+        <h3 class="w3-center">INFORMACIÓN</h3>
+        <p class="w3-center"><em>Hecho por: Lorena Dominique Eguivar Orellana</em></p>
+        <p style="text-align: justify;">
+            El cambio climático es un fenómeno que se refiere al aumento de la temperatura media global de la Tierra en
+            las últimas décadas, principalmente como resultado de la actividad humana. Los principales gases de efecto
+            invernadero que contribuyen al cambio climático son el dióxido de carbono, el metano y el óxido nitroso, que
+            se liberan principalmente por la quema de combustibles fósiles, la agricultura y la deforestación.
+            <br></br>
+            Los efectos del cambio climático pueden ser catastróficos, incluyendo sequías más intensas, inundaciones,
+            aumento del nivel del mar, tormentas más fuertes, aumento de la temperatura de los océanos y cambios en los
+            patrones de precipitación. Además, el cambio climático también puede tener impactos en la biodiversidad, la
+            agricultura, la salud humana y la economía.
+            <br></br>
+            Los científicos y los gobiernos de todo el mundo están trabajando juntos para abordar el cambio climático a
+            través de la reducción de emisiones de gases de efecto invernadero y la adopción de prácticas más
+            sostenibles. También se están realizando esfuerzos para adaptarse a los impactos inevitables del cambio
+            climático y para mitigar su impacto en las personas y los ecosistemas.
+        </p>
+        <div class="w3-row">
+            <div class="w3-col m6 w3-center w3-padding-large">
+                <p><b><i class="fa fa-user w3-margin-right"></i>Datos en Bolivia</b></p>
+                <img src="https://images.pexels.com/photos/5214145/pexels-photo-5214145.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    class="w3-round w3-image" alt="Bolivia" width="500" height="333">
+            </div>
+
+            <div class="w3-col m6 w3-hide-small w3-padding-large">
+                <p style="text-align: justify;">
+                    <br></br>
+                    El cambio climático en Bolivia se manifiesta en un aumento de la temperatura promedio, un cambio en
+                    los patrones de precipitación y un aumento en la frecuencia y severidad de eventos climáticos
+                    extremos como sequías, inundaciones y deslizamientos de tierra. <br></br>
+
+                    El aumento de la temperatura en Bolivia ha sido más pronunciado en las zonas altas, incluyendo las
+                    montañas andinas y el altiplano, donde el derretimiento de los glaciares ha afectado el suministro
+                    de agua para el consumo humano y la agricultura. El cambio en los patrones de precipitación ha
+                    afectado la producción agrícola en regiones como el Chaco y el Oriente boliviano, donde las sequías
+                    prolongadas han causado pérdidas significativas de cultivos. <br></br>
+
+                    La deforestación y la expansión de la agricultura comercial han contribuido al cambio climático en
+                    Bolivia, al igual que la emisión de gases de efecto invernadero por parte de la industria y el
+                    transporte. El país ha adoptado una serie de políticas y medidas para abordar el cambio climático,
+                    incluyendo la implementación de planes de mitigación y adaptación, la promoción de energías
+                    renovables y la conservación de bosques y ecosistemas. <br></br>
+                </p>
+            </div>
+        </div>
+        <p class="w3-large w3-center w3-padding-16">Mayores inciencias en el cambio climático:</p>
+        <p class="w3-wide"><i class="fa fa-car"></i>Emisiones de dióxido de carbono (CO2)</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:72%">72%</div>
+        </div>
+        <p class="w3-wide"><i class="fa fa-bomb"></i>Emisiones de metano (CH4)</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:18%">18%</div>
+        </div>
+        <p class="w3-wide"><i class="fa fa-cloud"></i>Emisiones de óxido nitroso (N2O)</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:10%">10%</div>
+        </div>
+    </div>
+
+    <!-- Consecuencias-->
+    <div class="bgimg-2 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-white w3-wide">CONSECUENCIAS</span>
+        </div>
+    </div>
+
+    <!-- Consecuencias-->
+    <div class="w3-content w3-container w3-padding-64" id="consecuencias">
+        <h3 class="w3-center">CONSECUENCIAS</h3>
+        <p class="w3-center"><em>Estas son algunas de las mayores consecuencias en el mundo<br> Hacer click en la imagen para ampliarla</em></p><br>
+
+        <div class="w3-row-padding w3-center">
+            <div class="w3-col m3">
+                <img src="https://images.pexels.com/photos/1683492/pexels-photo-1683492.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="Aumento del nivel del mar">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="https://images.pexels.com/photos/3694341/pexels-photo-3694341.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="Cambios en los patrones de precipitación">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="https://images.pexels.com/photos/12717297/pexels-photo-12717297.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="Afectación de la biodiversidad">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="https://images.pexels.com/photos/11975693/pexels-photo-11975693.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="Aumento de la frecuencia e intensidad de eventos climáticos extremo">
+            </div>
+        </div>
+
+        <div class="w3-row-padding w3-center w3-section">
+            <div class="w3-col m3">
+                <img src="https://images.pexels.com/photos/14530635/pexels-photo-14530635.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="Impactos en la salud humana">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="https://images.pexels.com/photos/39561/solar-flare-sun-eruption-energy-39561.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="Escasez de recursos">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="https://images.pexels.com/photos/4433935/pexels-photo-4433935.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="Pérdida de la productividad agrícola">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="https://images.pexels.com/photos/1146728/pexels-photo-1146728.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="Incremento de la migración">
+            </div>
+        </div>
+    </div>
+
+    <!-- Imágenes -->
+    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+        <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i
+                class="fa fa-remove"></i></span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+            <img id="img01" class="w3-image">
+            <p id="caption" class="w3-opacity w3-large"></p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+        <a href="#inicio" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Ir arriba</a>
+        <p>Hecho por:<a href="https://www.reddit.com" title="W3.CSS" target="_blank"
+                class="w3-hover-text-green"> Lorena Dominique Eguivar Orellana</a></p>
+    </footer>
+
+    <script>
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+        window.onscroll = function () { myFunction() };
+        function myFunction() {
+            var navbar = document.getElementById("myNavbar");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+            } else {
+                navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+            }
+        }
+
+        function toggleFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
