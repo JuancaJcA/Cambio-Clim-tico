@@ -29,7 +29,8 @@
         /* Create a Parallax Effect */
         .bgimg-1,
         .bgimg-2,
-        .bgimg-3 {
+        .bgimg-3,
+        .bgimg-4 {
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
@@ -54,6 +55,12 @@
             min-height: 400px;
         }
 
+        /* Forth image (Contact) */
+        .bgimg-4 {
+            background-image: url("https://www.issemym.gob.mx/sites/www.issemym.gob.mx/files/inline-images/protocolos-01_0.png");
+            min-height: 400px;
+        }
+
         .w3-wide {
             letter-spacing: 10px;
         }
@@ -67,7 +74,8 @@
 
             .bgimg-1,
             .bgimg-2,
-            .bgimg-3 {
+            .bgimg-3,
+            .bgimg-4 {
                 background-attachment: scroll;
                 min-height: 400px;
             }
@@ -88,15 +96,14 @@
             <a href="#info" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> INFORMACIÓN</a>
             <a href="#consecuencias" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i>
                 CONSECUENCIAS</a>
-            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
-                <i class="fa fa-search"></i>
-            </a>
+            <a href="#protocolos" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i>
+                PROTOCOLOS</a>
         </div>
 
         <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
             <a href="#info" class="w3-bar-item w3-button" onclick="toggleFunction()">INFORMACIÓN</a>
             <a href="#consecuencias" class="w3-bar-item w3-button" onclick="toggleFunction()">CONSECUENCIAS</a>
-            <a href="#" class="w3-bar-item w3-button">BUSCAR</a>
+            <a href="#protocolos" class="w3-bar-item w3-button" onclick="toggleFunction()">PROTOCOLOS</a>
         </div>
     </div>
 
@@ -181,48 +188,55 @@
     <!-- Consecuencias-->
     <div class="w3-content w3-container w3-padding-64" id="consecuencias">
         <h3 class="w3-center">CONSECUENCIAS</h3>
-        <p class="w3-center"><em>Estas son algunas de las mayores consecuencias en el mundo<br> (Hacer click en la imagen para ampliarla)</em></p><br>
+        <p class="w3-center"><em>Estas son algunas de las mayores consecuencias en el mundo<br> (Hacer click en la
+                imagen para ampliarla)</em></p><br>
 
         <div class="w3-row-padding w3-center">
             <div class="w3-col m3">
-                <img src="https://images.pexels.com/photos/1683492/pexels-photo-1683492.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                    alt="Aumento del nivel del mar">
+                <img src="https://images.pexels.com/photos/1683492/pexels-photo-1683492.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Aumento del nivel del mar">
             </div>
 
             <div class="w3-col m3">
-                <img src="https://images.pexels.com/photos/3694341/pexels-photo-3694341.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                <img src="https://images.pexels.com/photos/3694341/pexels-photo-3694341.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
                     alt="Cambios en los patrones de precipitación">
             </div>
 
             <div class="w3-col m3">
-                <img src="https://images.pexels.com/photos/12717297/pexels-photo-12717297.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                <img src="https://images.pexels.com/photos/12717297/pexels-photo-12717297.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
                     alt="Afectación de la biodiversidad">
             </div>
 
             <div class="w3-col m3">
-                <img src="https://images.pexels.com/photos/11975693/pexels-photo-11975693.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                <img src="https://images.pexels.com/photos/11975693/pexels-photo-11975693.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
                     alt="Aumento de la frecuencia e intensidad de eventos climáticos extremo">
             </div>
         </div>
 
         <div class="w3-row-padding w3-center w3-section">
             <div class="w3-col m3">
-                <img src="https://images.pexels.com/photos/14530635/pexels-photo-14530635.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                <img src="https://images.pexels.com/photos/14530635/pexels-photo-14530635.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
                     alt="Impactos en la salud humana">
             </div>
 
             <div class="w3-col m3">
-                <img src="https://images.pexels.com/photos/39561/solar-flare-sun-eruption-energy-39561.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                    alt="Escasez de recursos">
+                <img src="https://images.pexels.com/photos/39561/solar-flare-sun-eruption-energy-39561.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Escasez de recursos">
             </div>
 
             <div class="w3-col m3">
-                <img src="https://images.pexels.com/photos/4433935/pexels-photo-4433935.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                <img src="https://images.pexels.com/photos/4433935/pexels-photo-4433935.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
                     alt="Pérdida de la productividad agrícola">
             </div>
 
             <div class="w3-col m3">
-                <img src="https://images.pexels.com/photos/1146728/pexels-photo-1146728.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                <img src="https://images.pexels.com/photos/1146728/pexels-photo-1146728.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
                     alt="Incremento de la migración">
             </div>
         </div>
@@ -238,11 +252,109 @@
         </div>
     </div>
 
+    <!-- Protocolos-->
+    <div class="bgimg-4 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-black w3-wide">PROTOCOLOS</span>
+        </div>
+    </div>
+
+    <!-- Información - Protocolos -->
+    <div class="w3-content w3-container w3-padding-64" id="protocolos">
+        <div class="w3-row">
+            <div class="w3-col m6 w3-center w3-padding-large">
+                <p><b><i class="fa fa-info-circle w3-margin-right"></i>Protocolo 1: Terremoto</b></p>
+                <img src="https://www.primerahora.com/resizer/1nkocEkOOdvPfnDPWCUP-M8ZcuY=/2560x0/filters:quality(75):format(jpeg):focal(317x703:327x693)/cloudfront-us-east-1.images.arcpublishing.com/gfrmedia/KGHA4J734JHGXMAEVRBQEZG7UE.jpg"
+                    class="w3-round w3-image" alt="Bolivia" width="500" height="333">
+            </div>
+
+            <div class="w3-col m6 w3-hide-small w3-padding-large">
+                <p style="text-align: justify;">
+                    <br></br>
+                    <b>Protocolo de actuación en caso de terremoto:</b><br><br>
+                    <b>1: Prevención y preparación:</b><br>
+                    - Identificar las zonas de mayor riesgo sísmico y promover medidas de mitigación.<br>
+                    - Establecer sistemas de alerta temprana y difusión de información.<br>
+                    - Realizar simulacros periódicos y capacitar a la población en medidas de autoprotección.<br></br>
+
+                    <b>2: Durante el terremoto:</b><br>
+                    - Mantener la calma y buscar un lugar seguro, como debajo de una mesa o estructura resistente.<br>
+                    - Evitar el pánico y no utilizar ascensores.<br>
+                    - Proteger la cabeza y el cuello.<br></br>
+
+                    <b>3: Después del terremoto:</b><br>
+                    - Evaluar la seguridad de las estructuras y evacuar edificios dañados si es necesario.<br>
+                    - Atender a heridos y solicitar asistencia médica.<br>
+                    - Evaluar y asegurar servicios básicos, como agua potable y electricidad.<br>
+                </p>
+            </div>
+        </div>
+
+        <div class="w3-row">
+            <div class="w3-col m6 w3-center w3-padding-large">
+                <p><b><i class="fa fa-info-circle w3-margin-right"></i>Protocolo 2: Inundación</b></p>
+                <img src="https://navarra.okdiario.com/media/navarra/images/2021/12/10/2021121017341196894.jpg"
+                    class="w3-round w3-image" alt="Bolivia" width="500" height="333">
+            </div>
+
+            <div class="w3-col m6 w3-hide-small w3-padding-large">
+                <p style="text-align: justify;">
+                    <br></br>
+                    <b>Protocolo de actuación en caso de inundación:</b><br><br>
+                    <b>1: Alerta temprana y evacuación:</b><br>
+                    - Mantenerse informado sobre los pronósticos y alertas de inundaciones.<br>
+                    - Evacuar zonas de riesgo y dirigirse a lugares elevados o refugios designados.<br>
+                    - Seguir las indicaciones de las autoridades y no cruzar áreas inundadas.<br></br>
+
+                    <b>2: Seguridad personal:</b><br>
+                    - Evitar el contacto con el agua contaminada y usar equipo de protección personal.<br>
+                    - No tocar cables eléctricos o dispositivos eléctricos en áreas inundadas.<br>
+                    - Mantenerse alejado de corrientes de agua y no intentar cruzarlas a pie o en vehículo.<br></br>
+
+                    <b>3: Recuperación y apoyo:</b><br>
+                    - Evaluar los daños y solicitar asistencia de servicios de emergencia.<br>
+                    - Realizar labores de limpieza y desinfección una vez que las autoridades indiquen que es seguro
+                    hacerlo.<br>
+                    - Brindar apoyo a las personas afectadas y colaborar en los esfuerzos de recuperación.<br></br>
+                </p>
+            </div>
+        </div>
+
+        <div class="w3-row">
+            <div class="w3-col m6 w3-center w3-padding-large">
+                <p><b><i class="fa fa-info-circle w3-margin-right"></i>Protocolo 3: Pandemia</b></p>
+                <img src="https://bolivia.un.org/sites/default/files/styles/hero_header_2xl_1x/public/2021-11/OCR4.jpg?itok=4vYiT1oj"
+                    class="w3-round w3-image" alt="Bolivia" width="500" height="333">
+            </div>
+
+            <div class="w3-col m6 w3-hide-small w3-padding-large">
+                <p style="text-align: justify;">
+                    <br></br>
+                    <b>Protocolo de actuación en caso de pandemia:</b><br><br>
+                    <b>1: Prevención y comunicación:</b><br>
+                    - Promover medidas de higiene, como lavado de manos frecuente y uso de mascarillas.<br>
+                    - Difundir información actualizada sobre la pandemia y las pautas de prevención.<br>
+                    - Fomentar el distanciamiento social y evitar aglomeraciones.<br></br>
+
+                    <b>2: Control de la propagación:</b><br>
+                    - Identificar casos sospechosos y realizar pruebas de detección.<br>
+                    - Aislar a las personas infectadas y rastrear sus contactos cercanos.<br>
+                    - Implementar medidas de cuarentena y restricciones en caso de brotes.<br></br>
+
+                    <b>3: Atención médica y apoyo:</b><br>
+                    - Brindar atención médica adecuada a los pacientes infectados.<br>
+                    - Garantizar el acceso a medicamentos, equipos médicos y recursos necesarios.<br>
+                    - Ofrecer apoyo psicológico y social a las personas afectadas por la pandemia.<br></br>
+                </p>
+            </div>
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
         <a href="#inicio" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Ir arriba</a>
-        <p>Hecho por:<a href="https://www.reddit.com" title="W3.CSS" target="_blank"
-                class="w3-hover-text-green"> Lorena Dominique Eguivar Orellana</a></p>
+        <p>Hecho por:<a href="https://www.reddit.com" title="W3.CSS" target="_blank" class="w3-hover-text-green"> Lorena
+                Dominique Eguivar Orellana</a></p>
     </footer>
 
     <script>
